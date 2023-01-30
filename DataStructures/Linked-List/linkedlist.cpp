@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//----->> Inserting/Deleteing, Sorting, Traversing, Searching
+
 struct LinkedList
 {
     int data;
