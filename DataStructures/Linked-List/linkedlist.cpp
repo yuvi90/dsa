@@ -43,7 +43,7 @@ int searchList(Node *head, int value)
     return 0;
 }
 
-//-->> Insertions (at First, at Last, at Index)
+//------------------------------------------>> Insertions (at First, at Last, at Index)
 void insertAtFirst(Node *head, int value)
 {
     Node *newNode = createNode(head->data);
@@ -66,7 +66,7 @@ void insertAtLast(Node *head, int value)
 void insertAtIndex(Node *head, int value, int index)
 {
     int i = 1;
-    while (i < index-1)
+    while (i < index - 1)
     {
         i++;
         head = head->next;
@@ -76,7 +76,39 @@ void insertAtIndex(Node *head, int value, int index)
     head->next = newNode;
 }
 
-//-->> Deletion (at First, at Last, at Index)
+//------------------------------------------->> Deletion (at First, at Last, at Index)
+void deleteAtFirst(Node *head)
+{
+    Node *oldNode = head->next;
+    head->data = oldNode->data;
+    head->next = oldNode->next;
+    free(oldNode);
+}
+
+void deleteAtLast(Node *head)
+{
+    Node *prevNode;
+    while (head->next != NULL)
+    {
+        prevNode = head;
+        head = head->next;
+    }
+    prevNode->next = NULL;
+    free(head);
+}
+
+void deleteAtIndex(Node *head, int index)
+{
+    int i = 1;
+    while (i < index - 1)
+    {
+        i++;
+        head = head->next;
+    }
+    Node *oldNode = head->next;
+    head->next = head->next->next;
+    free(oldNode);
+}
 
 int main()
 {
@@ -122,6 +154,14 @@ int main()
 
     cout << endl;
     searchList(head1, 5);
+    cout << endl;
+
+    deleteAtFirst(head1);
+    deleteAtLast(head1);
+    traverseList(head1);
+    cout << endl;
+    deleteAtIndex(head1, 1);
+    traverseList(head1);
 
     return 0;
 }
