@@ -5,7 +5,7 @@ node_modules
 dist
 dist-ssr
 *.local
-DataStructures/Java/bin
+DataStructures/DS in Java/bin
 
 # Editor directories and files
 .vscode/*

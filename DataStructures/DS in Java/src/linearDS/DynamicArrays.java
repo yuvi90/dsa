@@ -1,18 +1,16 @@
-package Arrays;
+package linearDS;
 
 // Dynamic Arrays Class
-
-
-public class Array {
-    //--------------Properties
+public class DynamicArrays {
+    // --------------Properties
     
     private int[] array;
     private int usedCount;
-    
-    //---------------Methods
-    
+
+    // ---------------Methods
+
     // Constructor
-    public Array(int size) {
+    public DynamicArrays(int size) {
         this.array = new int[size];
     }
 
@@ -21,7 +19,7 @@ public class Array {
         // if the array is full, resize it
         if (this.array.length == this.usedCount) {
             // create a new array (twice the size)
-            int[] newArray = new int[this.usedCount*2];
+            int[] newArray = new int[this.usedCount * 2];
             // copy all the existing item
             for (int i = 0; i < this.usedCount; i++) {
                 newArray[i] = this.array[i];
@@ -33,35 +31,30 @@ public class Array {
         this.array[this.usedCount] = item;
         this.usedCount++;
     }
-    
+
     // Removing
     public void removeAt(int index) {
         // validate Index
-        if (index < 0 || index >= this.usedCount)
-        {
+        if (index < 0 || index >= this.usedCount) {
             throw new IllegalArgumentException();
         }
-        // shifting Array 
-        for (int i = index; i < this.usedCount; i++)
-        {
-            this.array[i] = this.array[i+1];
+        // shifting Array
+        for (int i = index; i < this.usedCount; i++) {
+            this.array[i] = this.array[i + 1];
         }
         this.usedCount--;
     }
-    
+
     // Searching
-    public int indexOf(int item)
-    {
-        for (int i = 0; i < this.usedCount; i++)
-        {
-            if (this.array[i] == item)
-            {
+    public int indexOf(int item) {
+        for (int i = 0; i < this.usedCount; i++) {
+            if (this.array[i] == item) {
                 return i;
             }
         }
         return -1;
     }
-    
+
     // Printing
     public void print() {
         for (int i = 0; i < this.usedCount; i++) {

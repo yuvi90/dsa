@@ -1,4 +1,4 @@
-package LinkedList;
+package linearDS;
 
 class Node {
     private int data;
@@ -9,10 +9,10 @@ public class LinkedList {
     private Node first;
     private Node last;
 
-    //addFirst
-    //addLast
-    //deleteFirst
-    //deleteLast
-    //contains
-    //indexOf
+    // addFirst
+    // addLast
+    // deleteFirst
+    // deleteLast
+    // contains
+    // indexOf
 }
