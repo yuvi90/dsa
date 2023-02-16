@@ -1,7 +1,9 @@
+package Arrays;
+
 // Dynamic Arrays Class
 
 
-class Array {
+public class Array {
     //--------------Properties
     
     private int[] array;
