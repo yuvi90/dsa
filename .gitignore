@@ -1,15 +1,15 @@
+tempCodeRunnerFile.*
 *.exe
 *.class
+DataStructures/DS_in_Java/bin
 
 node_modules
 dist
 dist-ssr
 *.local
-DataStructures/DS in Java/bin
 
 # Editor directories and files
 .vscode/*
-DataStructures/DS in Java/.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -22,5 +22,3 @@ DataStructures/DS in Java/.vscode/*
 # Logs
 logs
 *.log
-
-tempCodeRunnerFile.*
