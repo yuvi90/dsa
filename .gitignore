@@ -9,6 +9,7 @@ DataStructures/DS in Java/bin
 
 # Editor directories and files
 .vscode/*
+*/.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
