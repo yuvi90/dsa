@@ -39,7 +39,11 @@ public class LinkedListDemo {
         
         System.out.println();
         list.toPrint();
-        list.toReverse();
+        // list.toReverse();
+        list.addLast(40);
+        list.addLast(50);
+
         list.toPrint();
+        list.printMiddle();
     }
 }

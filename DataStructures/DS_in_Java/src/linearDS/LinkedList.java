@@ -138,6 +138,16 @@ public class LinkedList {
         return array;
     }
 
+    // toPrint
+    public void toPrint() {
+        Node current = first;
+        while (current != null) {
+            System.out.print(current.value + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
     // toReverse [ 10 (previous) -> 20 (current) -> 30 (next) ] <--> [ 30 -> 20 ->
     // 10 ]
     public void toReverse() {
@@ -149,6 +159,7 @@ public class LinkedList {
         while (current != null) {
             Node next = current.next;
             current.next = previousNode;
+            // Shifting Node for next loop
             previousNode = current;
             current = next;
         }
@@ -157,13 +168,49 @@ public class LinkedList {
         first = previousNode;
     }
 
-    // toPrint
-    public void toPrint() {
-        Node current = first;
-        while (current != null) {
-            System.out.print(current.value + " ");
-            current = current.next;
+    // Find kth node from the end of a LinkedList in one pass.
+    // [10 -> 20 -> 30 -> 40 -> 50]
+    // * *
+    // k = 1 (50)
+    // k = 2 (40)
+    // k = 3 (30)
+    // k = 4 (20)
+    // k = 5 (10)
+
+    public int getKthFromTheEnd(int k) {
+        if (isEmpty())
+            throw new IllegalStateException();
+
+        Node a = this.first;
+        Node b = this.first;
+        for (int i = 0; i < k - 1; i++) {
+            b = b.next;
+            if (b == null)
+                throw new IllegalArgumentException();
         }
-        System.out.println();
+        while (b.next != last) {
+            a = a.next;
+            b = b.next;
+        }
+        return a.value;
+    }
+
+    // Find Middle in one pass. even has two nodes, odd has one node.
+    // [10 -> 20 -> 30 -> 40 -> 50]
+    // * *
+
+    public void printMiddle() {
+        if (isEmpty())
+            throw new IllegalStateException();
+        Node a = this.first;
+        Node b = this.first;
+        while (b != this.last && b.next != this.last) {
+            a = a.next;
+            b = b.next.next;
+        }
+        if (b == this.last)
+            System.out.println(a.value);
+        else
+            System.out.println(a.value + " " + a.next.value);
     }
 }
