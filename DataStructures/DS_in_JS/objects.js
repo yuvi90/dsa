@@ -4,7 +4,7 @@
     Object is a built-in data structure that can hold a unordered collection of key-value pairs.
     Key must either be a string or symbol data type where as the value can be of any data type and can hold methods or functions.
     To get value, you can use corresponding key using dot operator or [] notation.
-    Ojects are not interables.
+    Objects are not iterables.
 */
 
 const obj1 = {

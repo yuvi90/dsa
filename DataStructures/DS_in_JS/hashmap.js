@@ -1,5 +1,5 @@
 /*
-    Hash Table or Hash Map is a data structure that is used to store key-value pairs. Given key, you can get assiciate value with that key for fast lookup.
+    Hash Table or Hash Map is a data structure that is used to store key-value pairs. Given key, you can get associate value with that key for fast lookup.
 
     Javascript's objects is a special implementation of hash table. Object class adds its won keys. Keys may conflict and overwrite the inherited default properties.
     Maps which were introduced in 2015 allow you to store key-pairs without conflicting. We mostly use this hash table implementation.
@@ -12,12 +12,12 @@
 
     We store key value pairs in a fix sized array but array have a numeric index so we need string as a index to number as an index.
     A hashing function accepts string key, converts it into hash code using a defined logic, and then maps it into a numeric index that is within the bounds of the array.
-    Using the index, store, delete and retreive the key-value pair.
+    Using the index, store, delete and retrieve the key-value pair.
 
     Hash tables are implemented where constant time lookup and insertion are required.
     eg. Database indexing, Caches
 
-    Good hashing function is that which creates unique index number everytime for different keys to minimize collisions.
+    Good hashing function is that which creates unique index number every time for different keys to minimize collisions.
 */
 
 class HashTable {

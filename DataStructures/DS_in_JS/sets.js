@@ -2,9 +2,9 @@
     SETS
     
     SETS is a built-in data structure that can hold a collection of UNIQUE values. 
-    Sets are interables, resizable and insertion order is not maintained in JavaScript.
+    Sets are iterables, resizable and insertion order is not maintained in JavaScript.
 
-    Sets in JavaScricpt can contain a mix of different data types. You can store strings, boolean, numbers, objects in same set.    
+    Sets in JavaScript can contain a mix of different data types. You can store strings, boolean, numbers, objects in same set.    
 
     SET vs Array
 

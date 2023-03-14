@@ -1,9 +1,9 @@
 /*
     ARRAYS
     
-    Array is a built-in data structure that can hold a collection of values. Array are interables, resizable, zero indexed and insertion order is maintained in JavaScript.
+    Array is a built-in data structure that can hold a collection of values. Array are iterables, resizable, zero indexed and insertion order is maintained in JavaScript.
 
-    Arrays in JavaScricpt can contain a mix of different data types. You can store strings, boolean, numbers, objects in same array.    
+    Arrays in JavaScript can contain a mix of different data types. You can store strings, boolean, numbers, objects in same array.    
 
 */
 
