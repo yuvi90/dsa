@@ -1,7 +1,7 @@
 /*
     Hash Table or Hash Map is a data structure that is used to store key-value pairs. Given key, you can get associate value with that key for fast lookup.
 
-    Javascript's objects is a special implementation of hash table. Object class adds its won keys. Keys may conflict and overwrite the inherited default properties.
+    Javascript's objects is a special implementation of hash table. Object class adds its own keys. Keys may conflict and overwrite the inherited default properties.
     Maps which were introduced in 2015 allow you to store key-pairs without conflicting. We mostly use this hash table implementation.
     Writing your Own hash table implementation is a very popular JavaScript interview question.
 
