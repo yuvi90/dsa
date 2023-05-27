@@ -1,5 +1,5 @@
 /*
-    A binary tree is a tree data structure in which each node has at at most two children. They are referred to as right child and left child.
+    A binary tree is a tree data structure in which each node has at most two children. They are referred to as right child and left child.
 
     Binary Search Tree - value of left subtree must be smaller than root and value of right subtree is greater that root.
     In BST each node has at most two children.
@@ -118,6 +118,7 @@ class BST {
         }
     }
 
+    // DFS Traversals - Three Ways
     preOrder(root) {
         if (root) {
             console.log(root.value);
@@ -139,6 +140,25 @@ class BST {
             console.log(root.value);
         }
     }
+
+    // BFS Traversal
+    breadthFirstTraversal(rootNode) {
+        const queue = [rootNode];
+
+        while (queue.length > 0) {
+            const node = queue.shift();
+            console.log(node.value);
+
+            const leftSubtree = node.left;
+            const rightSubtree = node.right;
+            if (leftSubtree != null) {
+                queue.push(leftSubtree);
+            }
+            if (rightSubtree != null) {
+                queue.push(rightSubtree);
+            }
+        }
+    }
 }
 
 const bst = new BST();
@@ -151,6 +171,10 @@ bst.insert(3);
 bst.insert(7);
 console.log(bst.isEmpty());
 
-// bst.preOrder(bst.root);
-// bst.inOrder(bst.root);
+bst.preOrder(bst.root);
+console.log("")
+bst.inOrder(bst.root);
+console.log("")
 bst.postOrder(bst.root);
+console.log("")
+bst.breadthFirstTraversal(bst.root)
