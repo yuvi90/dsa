@@ -6,6 +6,7 @@
     push() to add to the top. Complexity : O(1)
     pop() to remove from the top. Complexity : O(1)
     peek() to see current top element. Complexity : O(1)
+    All insertion or deletion occur at one end, ie. Top.
 
     Can be implemented using Fixed Array, Dynamic Array, LinkedList
     If stack is implemented in good way all the three major operations are O(1).
