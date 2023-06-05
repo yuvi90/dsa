@@ -45,7 +45,6 @@
         - Accessing the element with the highest priority would require iterating over all elements in the Set to find the element with the highest priority, resulting in linear time complexity.
 
     In both scenarios, the time complexity of the dequeue and peek operations is O(n) in the worst case because they involve searching or iterating over the elements in the data structure. To achieve better time complexity for these operations, a more efficient data structure such as a binary heap or a balanced binary search tree would be preferred.
-
 */
 class PriorityQueue {
     constructor(comparator) {

@@ -1,8 +1,5 @@
 /*
-    ARRAYS
-    
     Array is a built-in data structure that can hold a collection of values. Array are iterables, resizable, zero indexed and insertion order is maintained in JavaScript.
-
     Arrays in JavaScript can contain a mix of different data types. You can store strings, boolean, numbers, objects in same array.    
 
     Lookup by Index - O(1)
@@ -31,7 +28,6 @@
     5. Sorting: O(n log n) or O(n^2)
     - Sorting an array using efficient sorting algorithms like merge sort or quicksort has a time complexity of O(n log n).
     - If a less efficient sorting algorithm like bubble sort or insertion sort is used, the time complexity can be O(n^2).
-    
 */
 
 const arr = [1,2,"data"];

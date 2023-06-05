@@ -33,11 +33,6 @@
 
     =======>> TIME COMPLEXITY
 
-    Singly Linked List:
-    Lookup by Value or Index = O(n) **No Index in LL you need to traverse list.
-    Insertion - At End, Beginning = O(1), At Index/Middle = O(n)
-    Deletion - At Beginning = O(1), At Index/Middle, End = O(n)
-
     The time complexity of various operations in a linked list depends on the specific implementation and the type of linked list (singly linked list, doubly linked list, etc.). Here are the common operations and their time complexities in a singly linked list:
 
     1. Accessing an element by index: O(n)

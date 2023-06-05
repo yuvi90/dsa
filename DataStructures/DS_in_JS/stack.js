@@ -1,5 +1,4 @@
 // TODO: Do Questions --> push element at the end of stack --> reverse stack elements.
-
 /*
     Stacks is based on LIFO Principle.
     Stores elements into a sort vertical tower like Books or Plates.
@@ -17,6 +16,8 @@
     3. Call Stack
     4. Backtracking algorithms
 
+    =========>> BEST IMPLEMENTATION
+    
     The best implementation of stacks depends on the specific requirements and constraints of your use case. However, two common and efficient implementations of stacks are:
 
     1. Array-Based Implementation:
@@ -38,9 +39,7 @@
         - No random access: Accessing elements in the middle of the stack would require traversing the linked list, resulting in linear time complexity.
 
     The choice between the array-based and linked list-based implementation depends on factors such as the expected size of the stack, the need for dynamic resizing, and the frequency of push and pop operations. If the size of the stack is known and fixed, or if random access to elements is important, the array-based implementation may be a suitable choice. On the other hand, if the size of the stack may change dynamically or efficient push and pop operations are crucial, the linked list-based implementation could be more appropriate.
-    
 */
-
 
 //-->> Implemented Stack Using Fixed Arrays  (JavaScript arrays is not fixed, it is only for logic)
 class StackFA {

@@ -1,6 +1,4 @@
 /*
-    SETS
-    
     SETS is a built-in data structure that can hold a collection of UNIQUE values. 
     Sets are iterables, resizable and insertion order is not maintained in JavaScript.
 
@@ -30,7 +28,6 @@
     - Iterating over all elements in a set has a time complexity proportional to the number of elements.
 
     It's important to note that these time complexities are typical for the built-in Array and Set implementations in JavaScript. However, specific optimizations and variations in JavaScript engines may affect the actual performance.
-
 */
 
 const set = new Set([1, 2, 3]);
