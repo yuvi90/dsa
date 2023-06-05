@@ -5,8 +5,9 @@
     remove() to remove from the top. Complexity : O(1)
     peek() to see current top element. Complexity : O(1)
 
-    Can be implemented using Fixed Array, Dynamic Array, LinkedList, Stacks
-    Fixed/Dynamic Arrays - Queue Implementation remove() has complexity of O(n) because of sliding elements but other operations are O(1). If circular queue is implemented then All Operations are O(1).
+    Can be implemented using Fixed Array, Dynamic Array, LinkedList, Stacks.
+
+    Using Fixed/Dynamic Arrays Queue Implementation remove() has complexity of O(n) because of sliding elements but other operations are O(1). If circular queue is implemented then All Operations are O(1).
 
     Linked List - All Operations are O(1).
     

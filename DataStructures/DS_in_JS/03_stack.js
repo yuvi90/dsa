@@ -1,11 +1,11 @@
 // TODO: Do Questions --> push element at the end of stack --> reverse stack elements.
 /*
     Stacks is based on LIFO Principle.
-    Stores elements into a sort vertical tower like Books or Plates.
+    Stores elements into a sort of vertical tower like Books or Plates.
+    All insertion or deletion occur at one end, ie. Top.
     push() to add to the top. Complexity : O(1)
     pop() to remove from the top. Complexity : O(1)
     peek() to see current top element. Complexity : O(1)
-    All insertion or deletion occur at one end, ie. Top.
 
     Can be implemented using Fixed Array, Dynamic Array, LinkedList
     If stack is implemented in good way all the three major operations are O(1).
