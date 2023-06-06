@@ -47,15 +47,14 @@
 
     Common operations on heaps include:
 
-    -   Insertion: Adding an element to the heap while maintaining the heap property. (Top to Bottom and left to right insertion)
+    - Insertion: Adding an element to the heap while maintaining the heap property. (Top to Bottom and left to right insertion)
 
-    -   Deletion: Removing the maximum or minimum element from the heap while maintaining the heap property. (Delete max or min value)
+    - Deletion: Removing the maximum or minimum element from the heap while maintaining the heap property. (Delete max or min value)
 
-    -   Peek/Top: Retrieving the maximum or minimum element without removing it from the heap.
+    - Peek/Top: Retrieving the maximum or minimum element without removing it from the heap.
 
-    -   Heapify: Constructing a heap from an unsorted array in linear time (O(n)).
+    - Heapify: Constructing a heap from an unsorted array in linear time (O(n)).
 
     Heaps are utilized in various algorithms and data structures, such as priority queues, heap sort, graph algorithms like Dijkstra's algorithm, and more. They provide an efficient way to manage and retrieve the extreme elements within a collection.
-
 */
 
