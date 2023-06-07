@@ -1,5 +1,5 @@
 /*
-    Fibonacci Sequence: Write a recursive function to calculate the nth number in the Fibonacci sequence. In the Fibonacci sequence, each number is the sum of the two preceding ones: 0, 1, 1, 2, 3, 5, 8, 13, ...
+    Fibonacci Sequence: Write a recursive function to calculate the nth number in the Fibonacci sequence. In the Fibonacci sequence, each number is the sum of the two preceding ones: 0, 1, 1, 2, 3, 5, 8, 13,...nth
 */
 
 function fibonacci(n) {
