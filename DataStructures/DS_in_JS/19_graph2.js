@@ -1,5 +1,5 @@
 /*
-    Adjacency List using array list.
+    Graphs implemented using Adjacency List (Array List)
 */
 
 class Edge {
@@ -53,7 +53,7 @@ class Graph {
         }
     }
 
-    // BFS For Disconnected Graphs
+    // BFS For Disconnected Graphs - Time Complexity O(V+E)
     disConnectedBFS(start, visited) {
         let queue = [start];
 
