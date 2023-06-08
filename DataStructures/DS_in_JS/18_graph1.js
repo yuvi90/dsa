@@ -1,3 +1,7 @@
+/*
+    Graphs implemented using Adjacency List (Hashmap)
+*/
+
 class Graph {
     constructor() {
         this.nodes = new Map();
