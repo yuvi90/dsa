@@ -116,7 +116,15 @@ class Graph {
     }
 }
 
+//======================================>> GRAPH 1
+
 const graph1 = new Graph(4);
+
+/*
+    0   3
+     \ / \
+      2---1
+*/
 
 graph1.addEdge(0, 2, 2);
 graph1.addEdge(1, 2, 4);
@@ -126,14 +134,6 @@ graph1.addEdge(2, 1, 2);
 graph1.addEdge(2, 0, 3);
 graph1.addEdge(3, 1, 1);
 graph1.addEdge(3, 2, 4);
-
-const graph2 = new Graph(7);
-
-/*
-    0   3
-     \ / \
-      2---1
-*/
 
 let visited = new Array(graph1.nodes.length);
 for (let i = 0; i < visited.length; i++) {
@@ -145,6 +145,10 @@ for (let i = 0; i < visited.length; i++) {
     visited[i] = false;
 }
 console.log(graph1.isCycleUndirected(0, -1, visited));
+
+//======================================>> GRAPH 2
+
+const graph2 = new Graph(7);
 
 /*  
         1------3
@@ -182,6 +186,8 @@ for (let i = 0; i < visited.length; i++) {
     visited[i] = false;
 }
 console.log(graph2.isCycleUndirected(0, -1, visited));
+
+//======================================>> GRAPH 3
 
 const graph3 = new Graph(5);
 
