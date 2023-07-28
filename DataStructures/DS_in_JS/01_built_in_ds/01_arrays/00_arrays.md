@@ -1,18 +1,17 @@
+[Home](../../readme.md) <br>
+[Back](../00_built_in_ds.md)
+
 # Arrays
 
-Array is a built-in data structure that can hold a collection of values. Array are iterables, resizable, zero indexed and insertion order is maintained in JavaScript.
-Arrays in JavaScript can contain a mix of different data types. You can store strings, boolean, numbers, objects in same array.
+In JavaScript, array is a built-in data structure that can hold a collection of values. Arrays in JS are:
 
-### Time Complexity
+- `Iterables`
+- `Resizable`
+- `Zero indexed`
+- `Insertion order is maintained`
+- `Can contain mix data types`
 
-- Lookup by Index - O(1)
-- Lookup by Value - O(n)
-- Insertion - O(n)
-- Deletion - O(n)
-
-The time complexity of operations in the built-in Array and Set data structures in JavaScript is as follows:
-
-For Arrays:
+## Time complexity of operations in the built-in Arrays in JavaScript :
 
 1. `Accessing an element by index: O(1)`
 

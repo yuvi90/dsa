@@ -39,3 +39,15 @@ In summary, data structures form the foundation of software development and are 
 8. `Heaps:` Heaps are complete binary trees that satisfy the heap property, which can be either a max-heap or a min-heap. They are used to efficiently maintain the maximum or minimum element and are commonly used in priority queues and sorting algorithms.
 
 These are some of the fundamental data structures that are widely used in software development. While the list is not exhaustive, understanding these data structures and their properties will provide a strong foundation for solving various programming problems and designing efficient algorithms.
+
+# Learn more
+
+- [JavaScript Built-in Data Structures](./01_built_in_ds/00_built_in_ds.md)
+- [Linear Data Structures](./02_linear_ds/00_linear_ds.md)
+- [Non Linear Data Structures](./03_non_linear_ds/00_non_linear_ds.md)
+
+<hr>
+
+## Cheat sheet for different time and space complexities
+
+<img src="./cheat_sheet.png" alt="cheat-sheet-img">
