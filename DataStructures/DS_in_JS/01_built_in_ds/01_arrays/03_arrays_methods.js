@@ -4,6 +4,15 @@
  *
  */
 
+/*
+  Array.prototype.at(index)
+
+  The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers. Negative integers count back from the last item in the array.
+*/
+console.log("\n At Method:");
+const arr = [3, 4, 5, 6];
+console.log(arr.at(2));
+
 // Adding Elements ---- push--unshift
 console.log("\nAdding and Removing Methods:");
 const hobbies = ["guitar", "drawing", "code"];
@@ -88,7 +97,11 @@ months.splice(4, 1, "May");
 console.log(months);
 // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
 
-// Sorting
+/*
+
+  Sorting
+
+*/
 console.log("\nSort Method:");
 console.log("For Strings");
 const sort = ["Jan", "Feb", "March", "April", "May"].sort();
@@ -103,10 +116,10 @@ console.log(num); //Ascending
 num.sort((a, b) => b - a);
 console.log(num); //Descending
 
-/**
- *  The join() method creates and returns a new string by concatenating all of the    elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
- *
- * join() , join(separator)
+/*
+  The join() method creates and returns a new string by concatenating all of the    elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+ 
+  join() , join(separator)
  */
 console.log("\nJoin Method:");
 const elements = ["Fire", "Air", "Water"];
