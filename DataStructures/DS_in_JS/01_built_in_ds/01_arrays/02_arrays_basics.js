@@ -2,6 +2,8 @@
  
 Arrays holds reference. It passes its value by REFERENCE
 
+Some important concepts for copying data structure.
+
 1. Shallow Copy:
 Shallow copy refers to the process of creating a new data structure that is a replica of the original data structure, but it only duplicates the top-level structure. If the original data contains references to other objects (e.g., nested objects or arrays), the shallow copy creates new references to the same nested objects instead of duplicating them. Consequently, changes made to the nested objects in the shallow copy will also be reflected in the original data.
 

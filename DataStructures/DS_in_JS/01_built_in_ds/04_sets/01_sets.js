@@ -1,4 +1,4 @@
-// Basic Sets implementation
+// Basic Sets Implementation
 
 class mySet {
   constructor() {
