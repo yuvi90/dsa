@@ -22,5 +22,6 @@ dist-ssr
 # Logs
 logs
 *.log
-*/playGround.js
-*/testCode.js
+
+**/playGround.js
+**/testCode.js
