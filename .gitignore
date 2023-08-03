@@ -24,4 +24,4 @@ logs
 *.log
 
 **/playGround.js
-**/testCode.js
+**/test.*.js
