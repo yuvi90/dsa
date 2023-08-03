@@ -1,6 +1,7 @@
-// TODO: Do Questions --> push element at the end of stack --> reverse stack elements.
+// TODO: Question --> push element at the end of stack --> reverse stack elements.
 
-//-->> Implemented Stack Using Fixed Arrays  (JavaScript arrays is not fixed, it is only for logic)
+// Implemented Stack Using Fixed Arrays
+// (JavaScript arrays is not fixed, it is only for logic)
 class StackFA {
   constructor() {
     this.items = [];
@@ -51,7 +52,7 @@ class StackFA {
   }
 }
 
-//-->> Implemented Stack Using Dynamic Arrays
+// Implemented Stack Using Dynamic Arrays
 class StackDA {
   constructor() {
     this.items = [];
@@ -95,7 +96,7 @@ class StackDA {
   }
 }
 
-//-->> Implemented Stack Using Linked List
+// Implemented Stack Using Linked List
 class Node {
   constructor(data) {
     this.value = data;

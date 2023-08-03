@@ -1,3 +1,8 @@
+/**
+ * Doubly Linked List Implementation
+ *
+ */
+
 class Node {
   constructor(data) {
     this.value = data;

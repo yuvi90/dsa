@@ -1,4 +1,7 @@
-# Stack
+[Home](../../readme.md) <br>
+[Back](../00_linear_ds.md)
+
+# Stacks
 
 Stacks is also linear data structure.
 Stacks is based on LIFO Principle i.e. Last in First Out.

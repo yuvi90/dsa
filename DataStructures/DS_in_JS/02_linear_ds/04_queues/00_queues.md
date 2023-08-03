@@ -1,4 +1,7 @@
-# Queue
+[Home](../../readme.md) <br>
+[Back](../00_linear_ds.md)
+
+# Queues
 
 Queues is based on FIFO Principle i.e. First In First Out.
 Stores elements from Rear and removes from Front.

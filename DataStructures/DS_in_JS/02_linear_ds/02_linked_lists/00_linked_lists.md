@@ -1,3 +1,6 @@
+[Home](../../readme.md) <br>
+[Back](../00_linear_ds.md)
+
 # Linked List
 
 A linked list is a linear data structure used to store a collection of elements, called nodes. Each node in a linked list contains two parts: the data itself and a reference (or link) to the next node in the list. The reference points to the memory address or location of the next node.
@@ -66,4 +69,27 @@ The time complexity of various operations in a linked list depends on the specif
 
    - To iterate over all the elements in a singly linked list, you would need to traverse the list from the head node to the end, visiting each node once. This results in linear time complexity proportional to the number of elements in the list.
 
-It's important to note that these time complexities are specific to singly linked lists. Doubly linked lists or other variations may have slightly different time complexities due to the presence of additional pointers or operations.
+It's important to note that these time complexities are specific to `singly linked lists`. Doubly linked lists or other variations may have slightly different time complexities due to the presence of additional pointers or operations.
+
+### Doubly linked lists:
+
+1. Insertion:
+
+   - Insertion at the beginning: O(1)
+   - Insertion at the end: O(1) if a tail pointer is used; otherwise, O(n) (since you need to traverse the list to find the last element)
+   - Insertion at a given position (index): O(n/2) on average (since you may need to traverse half of the list to find the desired position)
+
+2. Deletion:
+
+   - Deletion at the beginning: O(1)
+   - Deletion at the end: O(1) if a tail pointer is used; otherwise, O(n) (since you need to traverse the list to find the last element for deletion)
+   - Deletion at a given position (index): O(n/2) on average (since you may need to traverse half of the list to find the desired position)
+
+3. Searching:
+
+   - Searching for a specific element: O(n) (in the worst case, you may need to traverse the entire list to find the element)
+
+4. Accessing elements by index:
+   - Accessing an element by index: O(n/2) on average (since you may need to traverse half of the list to find the desired position)
+
+Doubly linked lists provide efficient constant time (O(1)) insertion and deletion at the beginning of the list, which is a significant advantage over singly linked lists. However, it's important to note that they also have slightly increased memory overhead due to the extra pointer for each node. Additionally, while they allow for efficient bidirectional traversal, their overall performance is still limited compared to arrays and other data structures that provide constant time access by index.

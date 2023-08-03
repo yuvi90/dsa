@@ -1,5 +1,7 @@
 [Home](../readme.md)
 
+# JavaScript Built in Data Structures
+
 In JavaScript, there are several built-in data structures that you can use to organize and manipulate data efficiently. Some of the commonly used built-in data structures include:
 
 1. `Arrays`: Arrays are ordered collections of elements, where each element is identified by an index starting from 0. JavaScript arrays can contain elements of different types and can be resized dynamically.
