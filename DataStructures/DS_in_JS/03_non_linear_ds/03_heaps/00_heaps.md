@@ -1,5 +1,5 @@
 [Home](../../readme.md) <br>
-[Back](./00_trees.md)
+[Back](../00_non_linear_ds.md)
 
 # Heaps
 
@@ -65,4 +65,4 @@ Common operations on heaps include:
 
 - Heapify: Constructing a heap from an unsorted array in linear time (O(n)).
 
-Heaps are utilized in various algorithms and data structures, such as priority queues, heap sort, graph algorithms like Dijkstra's algorithm, and more. They provide an efficient way to manage and retrieve the extreme elements within a collection.
+Heaps are utilized in various algorithms and data structures, such as [priority queues](./01_priority_queues.md), heap sort, graph algorithms like Dijkstra's algorithm, and more. They provide an efficient way to manage and retrieve the extreme elements within a collection.

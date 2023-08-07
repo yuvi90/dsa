@@ -1,5 +1,5 @@
 [Home](../../readme.md) <br>
-[Back](./00_trees.md)
+[Back](./00_heaps.md)
 
 # Priority Queues
 

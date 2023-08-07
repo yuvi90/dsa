@@ -48,8 +48,28 @@ Usage:--
 
 In summary, these terms help describe the relationships and structure of nodes in a tree data structure. Trees are commonly used in computer science for various applications, including hierarchical data representation, search algorithms, and more.
 
-## More Tree Topics
+## Types of trees
 
-- [Binary Search Trees](./01_bst.md)
-- [Heaps](./02_heaps.md)
-- [Priority Queues](./03_priority_queues.md)
+1. **Binary Tree**: A binary tree is a tree in which each node has at most two children, referred to as the left child and the right child.
+
+2. **[Binary Search Trees](./01_bst.md) (BST)**: A binary search tree is a binary tree in which the left child of a node has a value less than or equal to the node's value, and the right child has a value greater than the node's value. It allows for efficient searching, insertion, and deletion operations.
+
+3. **AVL Tree**: An AVL tree is a self-balancing binary search tree in which the heights of the two child subtrees of any node differ by at most one. This balancing ensures that the tree remains relatively balanced and maintains a logarithmic height.
+
+4. **Red-Black Tree**: A red-black tree is another type of self-balancing binary search tree in which nodes are colored red or black. The tree follows certain rules to ensure that the tree remains balanced, providing efficient operations.
+
+5. **B-Tree**: A B-tree is a balanced tree structure that is commonly used in databases and file systems. It is designed to optimize disk reads and writes by allowing multiple keys per node and ensuring that the tree remains balanced.
+
+6. **[Heap](../03_heaps/00_heaps.md)**: A heap is a specialized tree-based data structure that satisfies the heap property. In a max-heap, the value of each parent node is greater than or equal to the values of its children. In a min-heap, the value of each parent node is less than or equal to the values of its children. Heaps are often used for implementing priority queues.
+
+7. **Trie (Prefix Tree)**: A trie is a tree-like data structure used for storing a dynamic set of strings, such as words in a dictionary. It allows for efficient string search and insertion operations.
+
+8. **Suffix Tree**: A suffix tree is a tree-like data structure used for pattern matching in strings. It is particularly useful for finding all occurrences of a substring within a larger string.
+
+9. **Segment Tree**: A segment tree is a binary tree used for range queries on arrays or lists. It is commonly used in various computational geometry and data manipulation algorithms.
+
+10. **Quad tree**: A quad tree is a tree structure used to partition a two-dimensional space into smaller regions. It is often used in computer graphics and image processing for spatial indexing and efficient search.
+
+11. **Octree**: An octree is an extension of a quad tree into three dimensions. It is used in 3D graphics and spatial indexing for representing volumetric data.
+
+These are just a few examples of the many types of trees used in computer science and data structures. Each type of tree has its own strengths and weaknesses, making it suitable for specific use cases and applications. The choice of tree structure depends on the problem you're trying to solve and the specific requirements of your application.

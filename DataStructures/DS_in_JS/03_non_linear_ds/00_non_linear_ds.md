@@ -22,4 +22,5 @@ Non-linear data structures are valuable in various applications where relationsh
 
 - [Trees](./01_trees/00_trees.md)
 - [Graphs](./02_graphs/00_graphs.md)
+- [Heaps](./03_heaps/00_heaps.md)
 - [Hash Maps](./03_hashmaps/00_hashmap.md)
