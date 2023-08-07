@@ -11,7 +11,7 @@ const fruits = {
 };
 console.log(fruits);
 
-// With new keyword
+// With new keyword and Object constructor
 console.log("\nObjects with new keyword:");
 const students = new Object({
   name: "johnny",
