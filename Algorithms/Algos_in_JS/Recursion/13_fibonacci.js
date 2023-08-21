@@ -3,10 +3,16 @@
 */
 
 function fibonacci(n) {
-    if (n === 0 || n === 1) {
-        return n;
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2);
+  // Base Case
+  if (n === 0 || n === 1) {
+    return n;
+  }
+  // Hypothesis: Assume fibonacci(n-1) and fibonacci(n-2) work correctly
+  const fib1 = fibonacci(n - 1);
+  const fib2 = fibonacci(n - 2);
+
+  // Induction step: Use the assumption to calculate fibonacci(n)
+  return fib1 + fib2;
 }
 
 console.log(fibonacci(3));
