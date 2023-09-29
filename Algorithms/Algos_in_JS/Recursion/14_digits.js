@@ -12,11 +12,11 @@ function calcDigits(n) {
     return 0;
   }
   // Hypothesis
-  const smallAns = calcDigits(Math.floor(n / 10));
+  const smallAns = calcDigits(parseInt(n / 10));
   // Induction Step
   const bigAns = smallAns + 1;
   return bigAns;
 }
 
-const result = calcDigits(102);
+const result = calcDigits(1032); // 4
 console.log(result);
