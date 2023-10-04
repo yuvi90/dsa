@@ -8,6 +8,7 @@
 let arr_1 = [1, 4, 5];
 let arr_2 = [3, 6, 8, 10];
 
+// O(n) Time & Space Complexity
 function merge(arr_1, arr_2) {
   let merged_array = [];
   let i = 0;

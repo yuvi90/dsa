@@ -1,4 +1,4 @@
-function conquer(arr, start, end, mid) {
+function merge(arr, start, end, mid) {
   const mergedArray = [];
   let merged_index = 0;
   let index_1 = start; //Track left part of array
@@ -50,15 +50,14 @@ function divide(arr, start, end) {
   divide(arr, start, mid);
   divide(arr, mid + 1, end);
 
-  // Induction Step : Building Solution by Conquer Two Sorted Arrays
-  conquer(arr, start, end, mid);
+  // Induction Step : Building Solution by Conquering (Sorting) & Combining Two Sorted Arrays
+  merge(arr, start, end, mid);
 }
 
 function mergeSort(array) {
   divide(array, 0, array.length - 1);
+  return array;
 }
 
 const array = [5, 3, 1, 2, -6, 4, 9, 0, -1, 2];
-console.log(array);
-mergeSort(array);
-console.log(array);
+console.log(mergeSort(array));
