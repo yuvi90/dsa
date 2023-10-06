@@ -8,25 +8,25 @@
 
 let arr = [1, 3, 4, 5, 6, 8];
 let start = 0;
-let end = arr.length;
+let end = arr.length - 1;
 
 function b_search(num, arr, start, end) {
-  if (start >= 0) {
-    let mid = start + (end - start) / 2;
+  if (start <= end) {
+    let mid = Math.floor((start + end) / 2);
 
     // If Find at middle
     if (arr[mid] == num) {
       return mid;
     }
 
-    // Search Right Half
-    if (num > arr[mid]) {
-      return b_search(num, arr, mid + 1, end);
-    }
-
     // Search Left Half
     if (num < arr[mid]) {
       return b_search(num, arr, start, mid - 1);
+    }
+
+    // Search Right Half
+    if (num > arr[mid]) {
+      return b_search(num, arr, mid + 1, end);
     }
   }
   return -1;
