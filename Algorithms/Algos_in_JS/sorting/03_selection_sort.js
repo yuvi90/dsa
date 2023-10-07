@@ -23,13 +23,13 @@ function selectionSort(array) {
     array[i] = array[currentMinimum];
     array[currentMinimum] = temp;
   }
-  return array;
 }
 
 console.log("\nMethod 1");
 const array1 = [4, 1, -2, 1, 0];
 console.log(array1);
-console.log(selectionSort(array1));
+selectionSort(array1);
+console.log(array1);
 
 // Method 2 - By Recursion
 function sSort(array, n) {

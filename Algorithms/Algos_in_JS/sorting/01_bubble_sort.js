@@ -15,19 +15,19 @@ function bubbleSort(array) {
       }
     }
   }
-  return array;
 }
 
 const array1 = [2, 7, -1, 4, -2, 4];
 console.log("\nMethod 1");
 console.log(array1);
-console.log(bubbleSort(array1));
+bubbleSort(array1);
+console.log(array1);
 
 // Method 2 - By Recursion
 function bSort(array, n) {
   // Base Case: When there is single or no element in array
   if (n <= 1) {
-    return array;
+    return;
   }
 
   // Induction Step: Place largest element at the last
@@ -42,11 +42,10 @@ function bSort(array, n) {
 
   // Hypothesis: Recursive call for placing element at last (Assumption)
   bSort(array, n - 1);
-
-  return array;
 }
 
 console.log("\nMethod 2");
 const array2 = [2, 0, 7, 2, -1, 5, 4];
 console.log(array2);
-console.log(bSort(array2, array2.length));
+bSort(array2, array2.length);
+console.log(array2);
