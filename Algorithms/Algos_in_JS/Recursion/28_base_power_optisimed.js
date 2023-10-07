@@ -10,12 +10,12 @@
 
 // Level 1 Optimization
 
-function exponent(base, power) {
+function exponent1(base, power) {
   if (power === 0) {
     return 1;
   }
 
-  const halfPower = exponent(base, Math.floor(power / 2));
+  const halfPower = exponent1(base, Math.floor(power / 2));
 
   if (power % 2 === 0) {
     return halfPower * halfPower;
@@ -24,9 +24,12 @@ function exponent(base, power) {
   }
 }
 
+console.log("\nMethod 1");
+console.log(exponent1(2, 8));
+
 // Level 2 Optimization with memoization
 
-function exponent(base, power, memo = {}) {
+function exponent2(base, power, memo = {}) {
   if (power === 0) {
     return 1;
   }
@@ -35,7 +38,7 @@ function exponent(base, power, memo = {}) {
     return memo[power];
   }
 
-  const halfPower = exponent(base, Math.floor(power / 2), memo);
+  const halfPower = exponent2(base, Math.floor(power / 2), memo);
   const squaredHalfPower = halfPower * halfPower;
 
   if (power % 2 === 0) {
@@ -47,4 +50,5 @@ function exponent(base, power, memo = {}) {
   return memo[power];
 }
 
-console.log(exponent(2, 6));
+console.log("\nMethod 2");
+console.log(exponent2(2, 8));

@@ -6,18 +6,23 @@
 
 // Method 1
 
-function reverseString(string, n, result) {
-  if (n < 0) {
-    return result;
+function reverseString(string, n) {
+  if (n === 0) {
+    return string[n];
   }
-  result = result + string[n];
-  let str = reverseString(string, n - 1, result);
-
-  return str;
+  let remainingPart = reverseString(string, n - 1);
+  return string[n] + remainingPart;
 }
 
+console.log("\nMethod 1");
+let inputString = "abcde";
+console.log("Input String - ", inputString);
+let reversedString = reverseString(inputString, inputString.length - 1);
+console.log("New Reversed String - ", reversedString);
+console.log("Original String - ", inputString);
+
 // Method 2
-// String are immutable in javascript therefore converted in array so can pass by reference
+// Strings are immutable in javascript therefore converted in array so can pass by reference if we want to use pointers
 
 function reverse(string, i, j) {
   if (i >= j) {
@@ -35,9 +40,9 @@ function reverse(string, i, j) {
   return str;
 }
 
-const inputString = "abcde";
-let reversedString1 = reverseString(inputString, inputString.length - 1, "");
-let reversedString2 = reverse(inputString, 0, inputString.length - 1);
-console.log(inputString);
-console.log(reversedString1);
-console.log(reversedString2);
+console.log("\nMethod 2");
+inputString = "Hello";
+console.log("Input String - ", inputString);
+reversedString = reverse(inputString, 0, inputString.length - 1);
+console.log("New Reversed String - ", reversedString);
+console.log("Original String - ", inputString);
