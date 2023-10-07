@@ -9,7 +9,7 @@
 // Method 1
 
 function isPalindrome(string, i, j) {
-  // Base Case
+  // Base Case: Two Different Base Cases
   if (i >= j) {
     return true;
   }
@@ -22,9 +22,9 @@ function isPalindrome(string, i, j) {
   return result;
 }
 
+const inputString = "abba";
+console.log(isPalindrome(inputString, 0, inputString.length - 1));
+
 // Method 2
 
 function checkPalindrome(string, n) {}
-
-const inputString = "abba";
-console.log(isPalindrome(inputString, 0, inputString.length - 1));
