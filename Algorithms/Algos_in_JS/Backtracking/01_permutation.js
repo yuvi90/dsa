@@ -1,22 +1,24 @@
 /*
     Permutation Problem Statement:-
-        - Arrange "ABC" in possible different ways 
+        - Arrange "abc" in possible different ways 
         - N Factorial Solutions i.e. 3 x 2 x 1 = 6 Possible Solutions 
         - Time Complexity = O(n*n!)
 */
 
-function getPossibleArrangements(str, perm, idx) {
-    if (str.length == 0) {
-        console.log(perm);
-        return;
-    }
+function getPossibleArrangements(string, currentCombination, result) {
+  if (string.length === 0) {
+    result.push(currentCombination);
+    return;
+  }
 
-    for (let i = 0; i < str.length; i++) {
-        let currChar = str[i];
-        let newString = str.substring(0, i) + str.substring(i + 1);
-        getPossibleArrangements(newString, perm + currChar, idx + 1);
-    }
+  for (let i = 0; i < string.length; i++) {
+    let currChar = string[i];
+    let newString = string.substring(0, i) + string.substring(i + 1);
+    getPossibleArrangements(newString, currentCombination + currChar, result);
+  }
 }
 
-let string = "ABC";
-getPossibleArrangements(string, '', 0)
+let string = "abc";
+let result = [];
+getPossibleArrangements(string, "", result);
+console.log(result);
