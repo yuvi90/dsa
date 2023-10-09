@@ -1,3 +1,19 @@
+/*
+  Rat in the Maze
+
+  [
+    [1, 1, 0, 0],
+    [1, 1, 0, 1],
+    [0, 1, 0, 0],
+    [0, 1, 1, 1],
+  ]
+
+  (x,y) = (0,0)
+  Find way to get to the (x,y) == n-1 
+
+  This code only explores one solution as function will return true as soon as it finds one valid path, and it will backtrack without exploring other potential paths. This means it will find only one solution, if it exists, but it won't explore all solutions.
+*/
+
 function solveMaze(maze, x, y, sol, n) {
   // Base Case
   if (x == n - 1 && y == n - 1) {
