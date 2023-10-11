@@ -14,9 +14,14 @@ function exponent1(base, power) {
   if (power === 0) {
     return 1;
   }
-
+  // If Power is Negative
+  if (power < 0) {
+    base = 1 / base;
+    power = -1 * power;
+  }
+  // Hypothesis
   const halfPower = exponent1(base, Math.floor(power / 2));
-
+  // Induction  Step : Building solution from assumption
   if (power % 2 === 0) {
     return halfPower * halfPower;
   } else {
@@ -26,6 +31,7 @@ function exponent1(base, power) {
 
 console.log("\nMethod 1");
 console.log(exponent1(2, 8));
+console.log(exponent1(2, -2));
 
 // Level 2 Optimization with memoization
 
@@ -36,6 +42,11 @@ function exponent2(base, power, memo = {}) {
 
   if (power in memo) {
     return memo[power];
+  }
+
+  if (power < 0) {
+    base = 1 / base;
+    power = -1 * power;
   }
 
   const halfPower = exponent2(base, Math.floor(power / 2), memo);
@@ -52,3 +63,4 @@ function exponent2(base, power, memo = {}) {
 
 console.log("\nMethod 2");
 console.log(exponent2(2, 8));
+console.log(exponent2(2, -2));
