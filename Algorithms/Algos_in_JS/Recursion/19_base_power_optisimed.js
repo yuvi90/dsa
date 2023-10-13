@@ -36,28 +36,32 @@ console.log(exponent1(2, -2));
 // Level 2 Optimization with memoization
 
 function exponent2(base, power, memo = {}) {
+  // Base Case
   if (power === 0) {
     return 1;
   }
 
-  if (power in memo) {
-    return memo[power];
-  }
-
+  // If Power is negative
   if (power < 0) {
     base = 1 / base;
     power = -1 * power;
   }
 
-  const halfPower = exponent2(base, Math.floor(power / 2), memo);
-  const squaredHalfPower = halfPower * halfPower;
+  // If ans is cached
+  if (power in memo) {
+    return memo[power];
+  }
 
+  // Hypothesis
+  const halfPower = exponent2(base, Math.floor(power / 2), memo);
+
+  // Induction Step
+  const squaredHalfPower = halfPower * halfPower;
   if (power % 2 === 0) {
     memo[power] = squaredHalfPower;
   } else {
     memo[power] = base * squaredHalfPower;
   }
-
   return memo[power];
 }
 
