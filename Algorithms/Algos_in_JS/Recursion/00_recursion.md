@@ -99,4 +99,6 @@ Remember that practice is key to becoming proficient in solving recursion proble
 - [Finding Recursive Relation](./03_finding_recursive_relation.md)
 - [Relation between PMI and Recursion](./04_pmi_and_recursion.md)
 - [Base Case, Recursion Hypothesis, Induction Step](./05_bhi.md)
-- [Recursion Questions](./06_recursion_questions.md)
+- [Recursion Patterns](./06_recursion_patterns.md)
+- [Steps to Learn Recursion](./07_steps_to_learn.md)
+- [Recursion Questions](./08_recursion_questions.md)

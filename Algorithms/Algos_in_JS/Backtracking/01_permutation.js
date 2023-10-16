@@ -23,7 +23,7 @@ function getCombinations(array, index, result) {
   }
 }
 
-let array = ["a", "b", "c"];
+let array = [1, 2, 3];
 let result = [];
 getCombinations(array, 0, result);
 console.log(result);

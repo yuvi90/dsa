@@ -1,8 +1,11 @@
+[Back](./00_recursion.md)
+
 # Patterns In Recursion
 
 ### Functional Recursion
 
 ```javascript
+// This how function gives output to bigger problem broken down to smaller & smaller problem.
 function sumOfn(n) {
   if (n < 1) return 0;
   let ans = n + sumOfn(n - 1);
@@ -55,10 +58,13 @@ function fn(n) {
    - Forming solution by including or excluding choices (Multiple Recursion) eg. Subsequence Problem
    - Forming solution from Two Recursive Call (Multiple Recursion) eg. Fibonacci
    - Backtracking (Exploring All Choices and Find Valid Ones)
+5. Recursion takes stack space
 
 # Handle Return Values Effectively
 
 #### `No return value in base case` : Exploring all recursive cases and add results to other data structure or prints.
+
+It is also a parameterized recursion.
 
 `Example 1`
 

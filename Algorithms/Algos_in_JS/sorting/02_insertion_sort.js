@@ -5,6 +5,10 @@
 */
 
 // Method 1 - By Iteration
+
+// Time Complexity O(n^2)
+// Space Complexity O(1)
+
 function insertionSort(array) {
   for (let i = 1; i < array.length; i++) {
     let j = i;
@@ -24,6 +28,10 @@ insertionSort(array1);
 console.log(array1);
 
 // Method 2 - By Recursion
+
+// Time Complexity O(n^2)
+// Space Complexity O(n) (due to recursion call stack space)
+
 function iSort(array, n) {
   // Base Case: When there is only 1 or no elements in the array
   if (n <= 1) {

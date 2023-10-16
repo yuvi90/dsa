@@ -9,10 +9,11 @@ function sumOfDigits(n) {
   if (n === 0) {
     return 0;
   }
+  const currentDigit = n % 10;
   // Hypothesis Assumption
   const smallAns = sumOfDigits(parseInt(n / 10));
   // Induction Step
-  return (n % 10) + smallAns;
+  return currentDigit + smallAns;
 }
 
 console.log(sumOfDigits(456));

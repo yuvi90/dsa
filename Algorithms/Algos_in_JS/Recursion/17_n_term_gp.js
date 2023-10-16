@@ -13,10 +13,13 @@
 */
 
 function gpNTerm(nTerm, firstTerm, commonRatio) {
+  // Base Case
   if (nTerm === 1) {
     return firstTerm;
   }
+  // Hypothesis Assumption
   const previousTerm = gpNTerm(nTerm - 1, firstTerm, commonRatio);
+  // Induction Step
   return previousTerm * commonRatio;
 }
 

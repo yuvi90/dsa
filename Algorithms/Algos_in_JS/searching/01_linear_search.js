@@ -1,4 +1,8 @@
 // Method 1 - By Iteration
+
+// Time Complexity O(n)
+// Space Complexity O(1)
+
 function linearSearch(array, target) {
   let flag = 0;
   for (let i = 0; i < array.length; i++) {
@@ -23,6 +27,10 @@ console.log(linearSearch(array1, 55)); // false
 console.log(linearSearch(array1, 1)); // true
 
 // Method 2 - By Recursion
+
+// Time Complexity O(n)
+// Space Complexity O(n) (due to recursion call stack space)
+
 function lSearch(array, target, n) {
   // Base Case
   if (array[n - 1] === target) {

@@ -5,6 +5,10 @@
 */
 
 // Method 1 - By Iteration
+
+// Time Complexity O(n^2)
+// Space Complexity O(1)
+
 function bubbleSort(array) {
   for (let i = 0; i < array.length - 1; i++) {
     for (let j = i + 1; j < array.length; j++) {
@@ -24,6 +28,10 @@ bubbleSort(array1);
 console.log(array1);
 
 // Method 2 - By Recursion
+
+// Time Complexity O(n^2)
+// Space Complexity O(n) (due to recursion call stack space)
+
 function bSort(array, n) {
   // Base Case: When there is single or no element in array
   if (n <= 1) {

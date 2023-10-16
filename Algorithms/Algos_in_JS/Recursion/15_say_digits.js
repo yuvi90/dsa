@@ -11,18 +11,16 @@ const digitWords = [
   "nine",
 ];
 
-function sayDigits(num, string = "") {
+function sayDigits(num) {
   // Base Case
   if (num === 0) {
-    return string;
+    return "";
   }
-
+  const currentDigit = num % 10;
   // Hypothesis: Assumption it will get words for remaining numbers
-  let remainingDigits = sayDigits(parseInt(num / 10), string);
-
+  let remainingDigits = sayDigits(parseInt(num / 10));
   // Induction Step: Building Solution from Assumption
-  const digit = num % 10;
-  return remainingDigits + " " + digitWords[digit];
+  return remainingDigits + " " + digitWords[currentDigit];
 }
 
 const words = sayDigits(4120);

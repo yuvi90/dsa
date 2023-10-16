@@ -3,34 +3,30 @@
 */
 
 const array = [1, 3, 5, 2];
-console.log(sort(array));
+sort(array);
+console.log(array);
 
 function sort(array) {
   // Base Case
   if (array.length === 1) {
-    return array;
+    return;
   }
   // Hypothesis
-  const temp = array.pop();
+  const lastItem = array.pop();
   sort(array);
   // Induction Step
-  insert(array, temp);
-  return array;
+  insert(array, lastItem);
 }
 
 function insert(array, number) {
   // Base Case
-  if (array.length === 0 || array[0] >= number) {
-    array.unshift(number);
-    return array;
-  } else if (array[array.length - 1] <= number) {
+  if (array.length === 0 || array[array.length - 1] <= number) {
     array.push(number);
-    return array;
+    return;
   }
   // Hypothesis
-  const temp = array.pop();
+  const lastItem = array.pop();
   insert(array, number);
   // Induction Step
-  array.push(temp);
-  return array;
+  array.push(lastItem);
 }

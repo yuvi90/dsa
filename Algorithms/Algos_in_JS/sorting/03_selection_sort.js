@@ -7,6 +7,10 @@
 */
 
 // Method 1 - By Iteration
+
+// Time Complexity O(n^2)
+// Space Complexity O(1)
+
 function selectionSort(array) {
   for (let i = 0; i < array.length; i++) {
     let currentMinimum = i; // current minimum item index
@@ -32,6 +36,10 @@ selectionSort(array1);
 console.log(array1);
 
 // Method 2 - By Recursion
+
+// Time Complexity O(n^2)
+// Space Complexity O(n) (due to recursion call stack space)
+
 function sSort(array, n) {
   // Base Case : If there is no or one items left in the array.
   if (n === 1 || n === 0) {
