@@ -28,6 +28,7 @@ function generateSubsets(array) {
   return output;
 }
 
-const inputArray = [2, 5, 4];
+// const inputArray = [2, 5, 4];
+const inputArray = [1, 2, 2];
 const subsets = generateSubsets(inputArray);
 console.log(subsets);
