@@ -12,14 +12,14 @@
 
 function print(n) {
   for (let i = 0; i < n; i++) {
-    let pattern = "";
+    let line = "";
     for (let j = i; j < n - 1; j++) {
-      pattern += " ";
+      line += " ";
     }
     for (let k = 0; k <= 2 * i; k++) {
-      pattern += "*";
+      line += "*";
     }
-    console.log(pattern);
+    console.log(line);
   }
 }
 

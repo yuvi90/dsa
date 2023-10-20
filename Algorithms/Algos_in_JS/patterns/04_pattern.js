@@ -8,11 +8,11 @@
 
 function print(n) {
   for (let i = 1; i <= n; i++) {
-    let pattern = "";
+    let line = "";
     for (let j = 0; j < i; j++) {
-      pattern += i;
+      line += i;
     }
-    console.log(pattern.trim());
+    console.log(line.trim());
   }
 }
 

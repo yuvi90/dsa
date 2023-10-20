@@ -15,17 +15,17 @@
 let n = 5;
 
 for (let i = 0; i < n; i++) {
-  let pattern = "";
+  let line = "";
   for (let j = 0; j < i + 1; j++) {
-    pattern += "*";
+    line += "*";
   }
-  console.log(pattern);
+  console.log(line);
 }
 
 for (let i = 0; i < n; i++) {
-  let pattern = "";
+  let line = "";
   for (let j = n - i; j > 1; j--) {
-    pattern += "*";
+    line += "*";
   }
-  console.log(pattern);
+  console.log(line);
 }

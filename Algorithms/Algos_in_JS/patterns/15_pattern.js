@@ -41,11 +41,11 @@ function print(n) {
     n = 26;
   }
   for (let i = 0; i < n; i++) {
-    let pattern = "";
+    let line = "";
     for (let j = 0; j < n - i; j++) {
-      pattern += letters[j];
+      line += letters[j];
     }
-    console.log(pattern);
+    console.log(line);
   }
 }
 
@@ -55,11 +55,11 @@ print(5);
 
 function p(n) {
   for (let i = 0; i <= n; i++) {
-    let pattern = "";
+    let line = "";
     for (let j = 1; j <= n - i; j++) {
-      pattern += String.fromCharCode(64 + j);
+      line += String.fromCharCode(64 + j);
     }
-    console.log(pattern);
+    console.log(line);
   }
 }
 

@@ -10,9 +10,9 @@
 
 let n = 5;
 for (let i = 0; i < n; i++) {
-  let pattern = "";
+  let line = "";
   for (let j = 0; j < n; j++) {
-    pattern += "*";
+    line += "*";
   }
-  console.log(pattern.trim());
+  console.log(line.trim());
 }

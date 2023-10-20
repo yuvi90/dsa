@@ -9,12 +9,12 @@
 function print(n) {
   let count = 1;
   for (let i = 1; i <= n; i++) {
-    let pattern = "";
+    let line = "";
     for (let j = 1; j <= i; j++) {
-      pattern += count + " ";
+      line += count + " ";
       count++;
     }
-    console.log(pattern);
+    console.log(line);
   }
 }
 

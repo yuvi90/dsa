@@ -8,20 +8,20 @@
 
 function print(n) {
   for (let i = 1; i <= n; i++) {
-    let pattern = "";
+    let line = "";
     if (i % 2 === 0) {
-      pattern += "0";
+      line += "0";
     } else {
-      pattern += "1";
+      line += "1";
     }
     for (let j = 1; j < i; j++) {
-      if (pattern.charAt(pattern.length - 1) === "0") {
-        pattern += "1";
+      if (line.charAt(line.length - 1) === "0") {
+        line += "1";
       } else {
-        pattern += "0";
+        line += "0";
       }
     }
-    console.log(pattern);
+    console.log(line);
   }
 }
 

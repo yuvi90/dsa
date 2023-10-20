@@ -7,20 +7,20 @@
 
 function print(n) {
   for (let i = 1; i <= n; i++) {
-    let pattern = "";
+    let line = "";
     // Ascending
     for (let j = 1; j <= i; j++) {
-      pattern += j;
+      line += j;
     }
     // Spaces
     for (let j = i; j < n * 2 - i; j++) {
-      pattern += " ";
+      line += " ";
     }
     // Descending
     for (j = i; j >= 1; j--) {
-      pattern += j;
+      line += j;
     }
-    console.log(pattern.trim());
+    console.log(line.trim());
   }
 }
 

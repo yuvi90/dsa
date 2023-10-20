@@ -10,11 +10,11 @@
 
 function print(n) {
   for (let i = n; i >= 0; i--) {
-    let pattern = "";
+    let line = "";
     for (let j = 0; j < i; j++) {
-      pattern += "*";
+      line += "*";
     }
-    console.log(pattern.trim());
+    console.log(line.trim());
   }
 }
 

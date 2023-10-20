@@ -39,14 +39,14 @@ const letters = [
 
 function print(n) {
   for (let i = 1; i <= n; i++) {
-    let pattern = "";
+    let line = "";
     for (let j = 1; j <= i; j++) {
       if (j > letters.length) {
         return;
       }
-      pattern += letters[j - 1];
+      line += letters[j - 1];
     }
-    console.log(pattern);
+    console.log(line);
   }
 }
 
@@ -56,11 +56,11 @@ print(5);
 
 function p(n) {
   for (let i = 1; i <= n; i++) {
-    let pattern = "";
+    let line = "";
     for (let j = 1; j <= i; j++) {
-      pattern += String.fromCharCode(64 + j);
+      line += String.fromCharCode(64 + j);
     }
-    console.log(pattern);
+    console.log(line);
   }
 }
 

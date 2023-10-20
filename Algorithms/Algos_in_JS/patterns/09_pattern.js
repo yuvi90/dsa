@@ -16,24 +16,24 @@
 
 function print(n) {
   for (let i = 0; i < n; i++) {
-    let pattern = "";
+    let line = "";
     for (let j = i; j < n - 1; j++) {
-      pattern += " ";
+      line += " ";
     }
     for (let k = 0; k <= 2 * i; k++) {
-      pattern += "*";
+      line += "*";
     }
-    console.log(pattern);
+    console.log(line);
   }
   for (let i = n - 1; i >= 0; i--) {
-    let pattern = "";
+    let line = "";
     for (let j = i; j < n - 1; j++) {
-      pattern += " ";
+      line += " ";
     }
     for (let k = 0; k <= 2 * i; k++) {
-      pattern += "*";
+      line += "*";
     }
-    console.log(pattern);
+    console.log(line);
   }
 }
 
@@ -43,16 +43,16 @@ print(5);
 
 function printPattern(n) {
   for (let i = 0; i < n; i++) {
-    let pattern = "";
-    pattern += " ".repeat(n - i - 1);
-    pattern += "*".repeat(2 * i + 1);
-    console.log(pattern);
+    let line = "";
+    line += " ".repeat(n - i - 1);
+    line += "*".repeat(2 * i + 1);
+    console.log(line);
   }
   for (let i = n - 1; i >= 0; i--) {
-    let pattern = "";
-    pattern += " ".repeat(n - i - 1);
-    pattern += "*".repeat(2 * i + 1);
-    console.log(pattern);
+    let line = "";
+    line += " ".repeat(n - i - 1);
+    line += "*".repeat(2 * i + 1);
+    console.log(line);
   }
 }
 
