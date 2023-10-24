@@ -1,0 +1,15 @@
+Daily DSA Routine:
+
+6.00 - 7.15 a.m. (1.15 hrs)
+- Patterns x 2 ==> 15 minutes
+- Recursive Questions x 1 ==> 30 minutes
+- Data Structures or Revise Algorithm ==> 30 minutes
+
+7.30 - 9.00 a.m. (Gym & Get Ready)
+
+9.00 - 10.00 a.m.
+- Array Question x 1 and Binary Search on Arrays Question x 1 ==> 60 minutes
+
+TODO: 
+
+- Longest Sub array Check Optimal Approach
