@@ -13,3 +13,4 @@ Daily DSA Routine:
 TODO: 
 
 - Longest Sub array Check Optimal Approach
+- Selection Sort (Recursive Function)

@@ -1,5 +1,26 @@
 # Two Pointer Technique
 
+Two pointers is an algorithmic technique where, as the name suggests, we maintain two pointers to keep track of two indices in the array. The primary condition for using the Two Pointers technique is monotonicity. When we can prove that based on a certain condition the pointer is either going to move left or right and by how much, two pointers provide an efficient way to solve problems.
+
+The statement "The primary condition for using the Two Pointers technique is monotonicity" means that one of the key requirements or characteristics of problems suitable for solving with the Two Pointers technique is that the sequence or data structure being processed should exhibit a certain order or monotonicity.
+
+In mathematics and computer science, a sequence is said to be monotonic if it follows a specific pattern or order. There are two main types of monotonic sequences:
+
+1. **Non-decreasing (or increasing)**: In a non-decreasing sequence, each element is greater than or equal to the previous element. This means that the elements are in non-decreasing order when you move from left to right.
+
+2. **Non-increasing (or decreasing)**: In a non-increasing sequence, each element is less than or equal to the previous element. This means that the elements are in non-increasing order when you move from left to right.
+
+The Two Pointers technique is particularly effective for solving problems that involve searching for pairs or sub arrays of elements within a sequence that satisfy certain conditions while taking advantage of the monotonicity of the sequence. By using two pointers that move in a specific way, you can efficiently explore the sequence to find solutions to problems such as finding pairs with a specific sum, sub arrays with a specific sum, or other conditions.
+
+In summary, the Two Pointers technique is most effective when dealing with monotonic sequences, where the order or relationship between elements is crucial to solving the problem efficiently. It allows you to take advantage of the inherent order to optimize your algorithm.
+
+# Types
+
+1. Same direction: Both start from the beginning eg. we have fixed and variable sliding window algorithms.
+2. Opposite-directional: One at the start and the other at the end, they move close to each other and meet somewhere in between, (-> <-).
+
+# Use Cases
+
 The two-pointer technique, also known as the "slow and fast pointers" or "tortoise and hare" technique, is a common approach used in computer programming and algorithms to solve various problems efficiently. It involves using two pointers that traverse a data structure (usually an array or a linked list) at different speeds, typically moving at different increments or steps, until they meet or satisfy a certain condition. This technique is particularly useful for solving problems related to searching, sorting, and detecting patterns in data.
 
 The two-pointer technique is a general approach that can be adapted in various ways to solve different types of problems efficiently. Here are some common variations of the two-pointer technique:
@@ -20,6 +41,6 @@ The two-pointer technique is a general approach that can be adapted in various w
 
 8. **Two Pointers for Palindrome Check**: To check if a string or array is a palindrome (reads the same forwards and backwards), you can use two pointers starting from the beginning and end and compare the characters or elements at those positions while moving inward.
 
-9. **Two Pointers for Longest Subarray/Substring**: This technique is used to find the longest subarray or substring that satisfies a certain condition, such as containing only unique elements or having a specific sum.
+9. **Two Pointers for Longest Sub array/Substring**: This technique is used to find the longest sub array or substring that satisfies a certain condition, such as containing only unique elements or having a specific sum.
 
 These are just some of the many ways the two-pointer technique can be applied to solve a wide range of programming and algorithmic problems. Depending on the problem's specific requirements and constraints, you can adapt and customize the two-pointer approach to efficiently address various scenarios.
