@@ -14,3 +14,4 @@ TODO:
 
 - Longest Sub array Check Optimal Approach
 - Selection Sort (Recursive Function)
+- Majority Element Optimal Approach 3
