@@ -23,14 +23,12 @@ function findCombinations(arr, index, target, currentCombination, result) {
     }
     return;
   }
-
   for (let i = index; i < arr.length; i++) {
     if (arr[index] <= target) {
       if (i > index && arr[index] === arr[index - 1]) {
         continue;
       }
       if (arr[i] > target) break;
-
       currentCombination.push(arr[index]);
       findCombinations(arr, i + 1, target - arr[i], currentCombination, result);
       currentCombination.pop();
