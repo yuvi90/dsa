@@ -12,9 +12,7 @@ function brute(nums, k) {
     for (let j = i; j < k + i; j++) {
       sum += nums[j];
     }
-    if (sum > maxSum) {
-      maxSum = sum;
-    }
+    maxSum = Math.max(sum, maxSum);
   }
   return maxSum;
 }
@@ -31,9 +29,7 @@ function optimal(nums, k) {
   maxSum = currentSum;
   for (let i = k; i < n; i++) {
     currentSum = currentSum - nums[i - k] + nums[i];
-    if (maxSum < currentSum) {
-      maxSum = currentSum;
-    }
+    maxSum = Math.max(currentSum, maxSum);
   }
   return maxSum;
 }
